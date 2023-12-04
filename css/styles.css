@@ -35,6 +35,8 @@ section {
 }
 
 #container {
+  width: 100%;
+  max-width: 50rem;
   background: white;
   display: flex;
   flex-direction: column;
@@ -46,7 +48,7 @@ section {
 }
 
 #task-container {
-  width: 40rem;
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -90,6 +92,12 @@ section {
 
 #add-task:hover {
   background: rgb(25, 115, 206);
+}
+
+@media screen and (max-width: 768px) {
+  p {
+    display: none;
+  }
 }
 
 .task-items-container {
