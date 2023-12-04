@@ -1,0 +1,153 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: rgb(50, 50, 50);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+section {
+  font-size: 4rem;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+#todo-list-icon {
+  width: 4rem;
+  height: 4rem;
+}
+
+#container {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  border-radius: 2rem;
+  gap: 2.4rem;
+}
+
+#task-container {
+  width: 40rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: white;
+  border-radius: 40px;
+  overflow: hidden;
+  border: 2px solid rgb(188, 188, 188);
+  transition: 0.3s;
+}
+
+#task-container:focus-within {
+  box-shadow: 0 0 0 2px rgb(110, 183, 255);
+  border: 2px solid dodgerblue;
+}
+
+#input-task {
+  width: 0;
+  flex-grow: 1;
+  border: none;
+  font-size: 1.6rem;
+  padding: 0.8rem;
+  outline: none;
+  padding: 2rem;
+}
+
+#add-task {
+  background: dodgerblue;
+  color: white;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  border-radius: 40px;
+  padding: 2rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#add-task:hover {
+  background: rgb(25, 115, 206);
+}
+
+.task-items-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 100%;
+}
+
+.task-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  list-style: none;
+  font-size: 1.6rem;
+}
+
+li::before {
+  content: url(../images/unchecked-icon.svg);
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+li.checked {
+  text-decoration: line-through;
+}
+
+li.checked::before {
+  content: url(../images/checked-icon.svg);
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+.deleteTask {
+  width: 2rem;
+  height: 2rem;
+  background: none;
+  border: none;
+}
+
+.fa-close {
+  font-size: 1.6rem;
+  color: grey;
+}
+
+.fa-close:hover {
+  color: red;
+  cursor: pointer;
+}

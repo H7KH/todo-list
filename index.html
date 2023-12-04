@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <section>
+      <img id="todo-list-icon" src="images/todo-list-icon.svg" alt="" />
+      To-DO List
+    </section>
+    <div id="container">
+      <div id="task-container">
+        <input id="input-task" type="text" placeholder="Enter Task" />
+        <button id="add-task">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24"
+            viewBox="0 -960 960 960"
+            width="24"
+          >
+            <path
+              d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"
+              fill="white"
+            />
+          </svg>
+          Add task
+        </button>
+      </div>
+      <!-- <div class="task-items-container">
+        <div class="task-items">
+          <li class="checked">task testing number 1</li>
+          <span class="task-close"><img src="images/close-icon.svg" alt="" /></span>
+        </div>
+      </div> -->
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
